@@ -1,0 +1,23 @@
+aps --> uml ----> classes
+
+
++===============+
+|nome da classe | (Letra maiuscula)
+|---------------|
+|atributos :tipo|
+|---------------|
+|métodos        |
++===============+
+_________________________________
+
+mer (ou Der) --> tabelas 
+
+nome da table
+=============
+camopos , tipos, tamanhos 
+___________________________________________________________
+
+todo nome de classe comessa com a primeira letra maiuscula.
+
+ex: Cliente
+    ConatsReceber
