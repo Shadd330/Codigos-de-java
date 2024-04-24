@@ -1,23 +1,65 @@
-aps --> uml ----> classes
+// COMEÇO PRINCIPAL
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int  soma;
 
-+===============+
-|nome da classe | (Letra maiuscula)
-|---------------|
-|atributos :tipo|
-|---------------|
-|métodos        |
-+===============+
-_________________________________
+          FirstClass calc, calc1;
+//        intanciação da classe "FirstClass"
 
-mer (ou Der) --> tabelas 
+        calc = new FirstClass();
 
-nome da table
-=============
-camopos , tipos, tamanhos 
-___________________________________________________________
+        System.out.println("insert 'A' value: ");
+        calc.a = sc.nextInt();
 
-todo nome de classe comessa com a primeira letra maiuscula.
+        System.out.println("insert 'B' value: ");
+        calc.b = sc.nextInt();
 
-ex: Cliente
-    ConatsReceber
+        System.out.println("insert 'C' value: ");
+        calc.c = sc.nextInt();
+
+        soma = calc.somaValores();
+
+        System.out.println("A soma é:" +soma);
+
+        calc1 = new FirstClass();
+
+        System.out.println("insert 'A' value: ");
+        calc1.a = sc.nextInt();
+
+        System.out.println("insert 'B' value: ");
+        calc1.b = sc.nextInt();
+
+        System.out.println("insert 'C' value: ");
+        calc1.c = sc.nextInt();
+
+        soma = calc1.somaValores();
+
+        System.out.println("A soma é:" +soma);
+
+        sc.close();
+
+//        multiplicar o comprimento da base e da altura e dividir por dois.
+
+    }
+
+}
+// FIM PRINCIPAL
+
+// COMEÇO CLASSES
+public class FirstClass {
+
+    public int a;
+
+    public int b;
+
+    public int c;
+
+    public int somaValores() {
+     return a + b + c;
+    }
+}
+
+// FIM CLASSES
