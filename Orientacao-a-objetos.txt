@@ -63,3 +63,50 @@ public class FirstClass {
 }
 
 // FIM CLASSES
+
+
+
+
+//ATIVIDADE
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double a,b,mult, divi;
+        Triangle calc = new Triangle();
+
+
+        System.out.println("Insert the base value please: ");
+        a = sc.nextDouble();
+
+        System.out.println("insert the height value please: ");
+        b = sc.nextDouble();
+
+        mult = calc.Cauculate();
+
+        divi = calc.Cauculate();
+
+        System.out.println("the result is:" +divi);
+    }
+}
+
+
+==============
+
+public class Triangle {
+
+        double a;
+        double b;
+        double mult;
+        double divi;
+
+    public double Cauculate() {
+        mult = a * b;
+        divi = mult/2;
+
+    }
+}
+
