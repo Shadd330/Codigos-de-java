@@ -75,6 +75,26 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        /*
+        Scanner sc = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormart("##, ##0.0")
+        double area;
+
+        Triangle  triang = new Triangle();
+
+         System.out.println(insert the first value please)
+         b = next.Double
+
+         System.out.println(insert the second value please)
+          h = next.Double
+
+          area = triang.cauculaarea();
+
+          sout("o valor da area do triangulo" +df.format(area))
+
+          sc.close
+
+          */
         double a,b,mult, divi;
         Triangle calc = new Triangle();
 
@@ -92,16 +112,14 @@ public class Main {
         System.out.println("the result is:" +divi);
     }
 }
-
-
 ==============
 
 public class Triangle {
 
-        double a;
-        double b;
-        double mult;
-        double divi;
+    double a;
+    double b;
+    double mult;
+    double divi;
 
     public double Cauculate() {
         mult = a * b;
@@ -109,4 +127,19 @@ public class Triangle {
 
     }
 }
+/*
+
+public class Triangle {
+
+    double b;
+    double h;
+
+ public double cauculararea(){
+
+return (b * h)/2;
+
+    }
+ }
+
+ */
 
